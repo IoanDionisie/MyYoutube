@@ -1,7 +1,12 @@
 export interface Video {
-    id: string;
-    name: string;
-    description: string;
-    title: string;
+    id: {
+        videoId: string;
+        kind: string;
+    }
+    snippet: {
+        description: string;
+        thumbnail: string;
+        title: string; 
+    }
 
 }
